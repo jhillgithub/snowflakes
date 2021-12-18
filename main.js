@@ -1,5 +1,18 @@
 import './style.css';
 
+import snowflake1Url from './assets/snowflakes/Snowflake1.jpg?url';
+import snowflake2Url from './assets/snowflakes/Snowflake2.jpg?url';
+import snowflake3Url from './assets/snowflakes/Snowflake3.jpg?url';
+import snowflake4Url from './assets/snowflakes/Snowflake4.jpg?url';
+import snowflake5Url from './assets/snowflakes/Snowflake5.jpg?url';
+import snowflake6Url from './assets/snowflakes/Snowflake6.jpg?url';
+import snowflake7Url from './assets/snowflakes/Snowflake7.jpg?url';
+import snowflake9Url from './assets/snowflakes/Snowflake9.jpg?url';
+import snowflake10Url from './assets/snowflakes/Snowflake10.jpg?url';
+import snowflake11Url from './assets/snowflakes/Snowflake11.jpg?url';
+
+
+
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
@@ -28,17 +41,16 @@ function init() {
 
   const textureLoader = new THREE.TextureLoader();
 
-  const sprite1 = textureLoader.load('assets/snowflakes/Snowflake1.jpg');
-  const sprite2 = textureLoader.load('assets/snowflakes/Snowflake2.jpg');
-  const sprite3 = textureLoader.load('assets/snowflakes/Snowflake3.jpg');
-  const sprite4 = textureLoader.load('assets/snowflakes/Snowflake4.jpg');
-  const sprite5 = textureLoader.load('assets/snowflakes/Snowflake5.jpg');
-  const sprite6 = textureLoader.load('assets/snowflakes/Snowflake6.jpg');
-  const sprite7 = textureLoader.load('assets/snowflakes/Snowflake7.jpg');
-  const sprite8 = textureLoader.load('assets/snowflakes/Snowflake8.jpg');
-  const sprite9 = textureLoader.load('assets/snowflakes/Snowflake9.jpg');
-  const sprite10 = textureLoader.load('assets/snowflakes/Snowflake10.jpg');
-  const sprite11 = textureLoader.load('assets/snowflakes/Snowflake11.jpg');
+  const sprite1 = textureLoader.load(snowflake1Url);
+  const sprite2 = textureLoader.load(snowflake2Url);
+  const sprite3 = textureLoader.load(snowflake3Url);
+  const sprite4 = textureLoader.load(snowflake4Url);
+  const sprite5 = textureLoader.load(snowflake5Url);
+  const sprite6 = textureLoader.load(snowflake6Url);
+  const sprite7 = textureLoader.load(snowflake7Url);
+  const sprite9 = textureLoader.load(snowflake9Url);
+  const sprite10 = textureLoader.load(snowflake10Url);
+  const sprite11 = textureLoader.load(snowflake11Url);
 
   for (let i = 0; i < 5000; i++) {
 
@@ -60,7 +72,6 @@ function init() {
     [[0.80, 0, 0.5], sprite4, 5],
     [[1.0, 0.2, 0.5], sprite6, 20],
     [[0.95, 0.1, 0.5], sprite7, 15],
-    [[0.90, 0.05, 0.5], sprite8, 10],
     [[0.85, 0, 0.5], sprite9, 8],
     [[0.80, 0, 0.5], sprite10, 5],
     [[0.80, 0, 0.5], sprite11, 5]
